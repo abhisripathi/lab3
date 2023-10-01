@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serving Fonts</title>
+    <style>
+        /* Self-hosted font - Pacifico */
+        @font-face {
+            font-family: 'Pacifico';
+            src: url('fonts/Pacifico-Regular.woff') format('woff'),
+                 url('fonts/Pacifico-Regular.woff2') format('woff2');
+                 
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Pacifico', sans-serif;
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Delivering Fonts to Web Clients</h1>
+    <p>
+        One popular method to serve fonts to a website is using services like Google Fonts. However, for this exercise, we're self-hosting a font. By using the CSS @font-face rule, we can specify our own font file to be loaded. The font I've chosen is "Pacifico", which is quirky yet readable. This font is being served from our own server.
+    </p>
+    <p>
+        As you can observe, this page is styled using the "Pacifico" font, proving that our self-hosted font is being served and rendered correctly.
+    </p>
+</body>
+
+</html>
